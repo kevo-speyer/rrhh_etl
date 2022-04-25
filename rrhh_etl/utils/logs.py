@@ -21,7 +21,7 @@ def init_logging():
         level=logging.DEBUG,
         datefmt="%Y-%m-%d %H:%M:%S",
         handlers=[
-            logging.FileHandler(f"logs/{current_time}_etl.log"),
+            logging.FileHandler(f"/tmp/{current_time}_etl.log"),
             logging.StreamHandler()
         ]
     )
