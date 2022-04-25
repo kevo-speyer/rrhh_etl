@@ -1,5 +1,4 @@
 venv_etl/
 __pycache__/
 rrhh_etl.egg-info/
-rrhh_etl/logs/*
 **/__pycache__/
