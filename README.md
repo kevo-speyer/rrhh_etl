@@ -1,11 +1,13 @@
 # README
 
+This project is meant to perform Extrat Transform and Load (ETL) operations.
+
 ## QuickStart:
 
-### Install the rrhh_etls project run 
+### Install the rrhh_etls project
 `$ ./install.sh`
 
-### Activate virtual env
+### Activate created virtual env
 `$ source venv/bin/activate`
 
 ### Run an ETL 
@@ -21,3 +23,12 @@
 
 ### Config
     rrhh_etl/config.yaml
+
+### Pipelines
+    rrhh_etl/etls/
+
+### Queries
+    rrhh_etl/sqls/
+
+### Helpers
+    rrhh_etl/utils/
