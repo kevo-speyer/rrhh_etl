@@ -1,6 +1,6 @@
 import logging
 from pathlib import Path
-from rrhh_etl.utils import db_connections
+from utils import db_connections
 
 class ETL:
     def __init__(self, **kwargs):

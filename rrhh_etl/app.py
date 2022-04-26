@@ -1,3 +1,5 @@
+#!python
+
 import logging
 from utils import logs, parser, init_config 
 import importlib
