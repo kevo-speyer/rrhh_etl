@@ -1,3 +1,4 @@
+venv/
 venv_etl/
 __pycache__/
 rrhh_etl.egg-info/

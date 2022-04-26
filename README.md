@@ -3,10 +3,21 @@
 ## QuickStart:
 
 ### Install the rrhh_etls project run 
-`$ pip install -e .`
+`$ ./install.sh`
 
-### Run
+### Activate virtual env
+`$ source venv/bin/activate`
 
+### Run an ETL 
 `$ rrhh_etl altas_bajas`
 
-## Entrypoint is in rrhh_etl/app.py
+### To see mannual
+`$ rrhh_etl -h`
+
+## Project Structure:
+
+### Entrypoint 
+    rrhh_etl/app.py
+
+### Config
+    rrhh_etl/config.yaml
