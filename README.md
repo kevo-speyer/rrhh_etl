@@ -16,7 +16,7 @@ This project is meant to perform Extrat Transform and Load (ETL) operations.
 ### To see mannual
 `$ rrhh_etl -h`
 
-## Project Structure:
+## Package Structure:
 
 ### Entrypoint 
     rrhh_etl/app.py
