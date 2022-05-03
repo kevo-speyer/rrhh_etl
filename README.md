@@ -11,7 +11,7 @@ This project is meant to perform Extrat Transform and Load (ETL) operations.
 `$ source venv/bin/activate`
 
 ### Run an ETL 
-`$ rrhh_etl altas_bajas`
+`$ rrhh_etl daily_inscriptions`
 
 ### To see mannual
 `$ rrhh_etl -h`
