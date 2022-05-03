@@ -1,6 +1,6 @@
 # README
 
-This project is meant to perform Extrat Transform and Load (ETL) operations.
+This project is a simple package to develop your Extract Transform and Load (ETL) operations.
 
 ## QuickStart:
 
