@@ -1,11 +1,11 @@
 db_source:
-    server: prd_server
+    server: localhost
     port: 5432
-    database: rrhh_source_dummy
-    user: rrhh_etl
+    database: test_source
+    user: kevin
 
 db_destination:
-    server: prd_server
+    server: localhost
     port: 5432
-    database: rrhh_destination_dummy
-    user: rrhh_etl
+    database: test_destination
+    user: kevin

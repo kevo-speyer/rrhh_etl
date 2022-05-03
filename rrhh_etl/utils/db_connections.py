@@ -1,15 +1,10 @@
-#import pyodbc
+from sqlalchemy import create_engine
 
-def get_engine(kwargs):
-    return kwargs
-
-def cursor_example_for_mssqlserver():
-    server = 'server_name'
-    database = 'redshift'
-    username = 'uname'
-    #driver='{ODBC Driver 17 for SQL Server}'
-    #driver='/usr/lib/libtdsodbc.so'
-    driver='FreeTDS'
-    cnxn = pyodbc.connect('DRIVER=FreeTDS;SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-    #cursor = cnxn.cursor()
-    return cnxn
+def get_engine(kwargs, dbms='postgresql'):
+    user = kwargs['user']#'kevin'
+    server = kwargs['server']#'localhost'
+    db = kwargs['database']#'test_source'
+    port = kwargs['port']
+    password = ''
+    engine = create_engine(f'{dbms}://{user}:{password}@{server}:{port}/{db}')
+    return engine
