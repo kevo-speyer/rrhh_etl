@@ -5,7 +5,7 @@ This project is a simple package to develop your Extract Transform and Load (ETL
 ## QuickStart:
 
 ### Install the rrhh_etls project
-`$ ./install.sh`
+`$ make install`
 
 ### Activate created virtual env
 `$ source venv/bin/activate`
