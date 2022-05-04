@@ -2,19 +2,21 @@ import logging
 import datetime
 import sys
 
-# Set directory for logs 
+# Set directory for logs
 PATH_TO_LOG = "/tmp"
+
 
 def handle_unexpected_exception(exc_type, exc_value, exc_traceback):
     """Runs anytime an exception occurs."""
     if issubclass(exc_type, KeyboardInterrupt):
-        #Will call default excepthook
+        # Will call default excepthook
         sys.__excepthook__(exc_type, exc_value, exc_traceback)
         return
-    
-    #TODO: send mail notifying about error
-    #Create a critical level log message with info from the except hook.
+
+    # TODO: send mail notifying about error
+    # Create a critical level log message with info from the except hook.
     logging.error("Unhandled exception", exc_info=(exc_type, exc_value, exc_traceback))
+
 
 def init_logging():
     """Configure logger and handle exceptions"""
@@ -25,11 +27,8 @@ def init_logging():
         datefmt="%Y-%m-%d %H:%M:%S",
         handlers=[
             logging.FileHandler(f"{PATH_TO_LOG}/{current_time}_etl.log"),
-            logging.StreamHandler()
-        ]
+            logging.StreamHandler(),
+        ],
     )
-    #In case of exception, run the exception handler 
+    # In case of exception, run the exception handler
     sys.excepthook = handle_unexpected_exception
-
-
-

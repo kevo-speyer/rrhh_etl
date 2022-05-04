@@ -12,5 +12,5 @@ def read_config(config_path=None):
     logging.info("Reading config from path %s", config_path)
     with open(config_path.resolve()) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
-    
+
     return config
