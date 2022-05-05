@@ -3,3 +3,4 @@ __pycache__/
 rrhh_etl.egg-info/
 **/__pycache__/
 .flake8
+.vscode/

@@ -23,7 +23,7 @@ class ETL:
         query_file = "backfill.sql"
         with open(self.get_query_path(query_file)) as f:
             template = Template(f.read())
-        query = template.render({"from_year": start, "to_date": to})
+        query = template.render({"from_date": start, "to_date": to})
 
         # Extract and Transform
         with self.engine_source.connect() as con:
@@ -46,6 +46,5 @@ class ETL:
         logging.info("Update method not yet implemented")
 
     def run(self, action, **kwargs):
-        # logging.info(f'run kwargs {kwargs}')
         run_action = getattr(self, action)
         run_action(**kwargs)

@@ -1,8 +1,9 @@
 #!python
 
 import logging
-from rrhh_etl.utils import logs, parser, init_config
 import importlib
+
+from rrhh_etl.utils import logs, parser, init_config
 
 
 def run_etls():
